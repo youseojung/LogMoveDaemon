@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIS_LOG_MANAGE", "IIS_LOG_MANAGE\IIS_LOG_MANAGE.csproj", "{E0611C1E-AB7C-4E8C-AE05-D2638A3067CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenZip", "SevenZip\SevenZip.csproj", "{4960DD14-3431-47EC-B9D9-9D2730A98DC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Deploy|Any CPU = Deploy|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0611C1E-AB7C-4E8C-AE05-D2638A3067CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0611C1E-AB7C-4E8C-AE05-D2638A3067CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0611C1E-AB7C-4E8C-AE05-D2638A3067CA}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0611C1E-AB7C-4E8C-AE05-D2638A3067CA}.Deploy|Any CPU.Build.0 = Debug|Any CPU
+		{E0611C1E-AB7C-4E8C-AE05-D2638A3067CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0611C1E-AB7C-4E8C-AE05-D2638A3067CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4960DD14-3431-47EC-B9D9-9D2730A98DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4960DD14-3431-47EC-B9D9-9D2730A98DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4960DD14-3431-47EC-B9D9-9D2730A98DC3}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{4960DD14-3431-47EC-B9D9-9D2730A98DC3}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
+		{4960DD14-3431-47EC-B9D9-9D2730A98DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4960DD14-3431-47EC-B9D9-9D2730A98DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

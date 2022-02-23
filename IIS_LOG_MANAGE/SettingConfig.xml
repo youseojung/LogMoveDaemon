@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SettingModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- 로그 파일 위치-->
+  <DaemonLogPath>D:\Daemon\Log</DaemonLogPath>
+  <!-- iis log 이동 내역 로그 파일명-->
+  <DaemonLogFileName>IIS_Log_Move</DaemonLogFileName>
+  <!-- iis log 내역 삭제 파일명-->
+  <DaemonLogFileNameDelete>IIS_Log_Delete</DaemonLogFileNameDelete>
+  <!-- 이동할 파일의 날짜 설정 (현재일 기준 이전일로 설정)-->
+  <MoveDays>-7</MoveDays>
+  <!-- 삭제할 파일 날짜 기준 (현재월 기준 이전월로 설정)-->
+  <DeleteMonths>-12</DeleteMonths>
+
+  <!-- IIS 로그 폴더 위치 (네트워크 드라이브 공유 경로로 설정)-->
+  <SourceFolderList>
+    <!--다수 ip이용한 로그인 분석요청으로인하여 iis 로그 분리-->
+
+    <SourceFolder>
+      <Src>\\test\d$\02.LOG\WebLog\W3SVC4</Src>
+    </SourceFolder>
+
+  </SourceFolderList>
+  <!-- IIS 로그 복사할 폴더 위치 (네트워크 드라이브 공유 경로로 설정)-->
+  <DestinationFolderList>
+    
+    <DestinationFolder>
+      <Dest>\\ybackup\test\\W3SVC4</Dest>
+    </DestinationFolder>
+
+
+  </DestinationFolderList>
+</SettingModel>

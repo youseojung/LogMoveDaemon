@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SettingModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- 로그 파일 위치-->
+  <DaemonLogPath>D:\Daemon\iis_log</DaemonLogPath>
+  <!-- iis log 이동 내역 로그 파일명-->
+  <DaemonLogFileName>IIS_Log_Move</DaemonLogFileName>
+  <!-- iis log 내역 삭제 파일명-->
+  <DaemonLogFileNameDelete>IIS_Log_Delete</DaemonLogFileNameDelete>
+  <!-- 이동할 파일의 날짜 설정 (현재일 기준 이전일로 설정)-->
+  <MoveDays>-7</MoveDays>
+  <!-- 삭제할 파일 날짜 기준 (현재월 기준 이전월로 설정)-->
+  <DeleteMonths>-12</DeleteMonths>
+
+  <MovieServerList>
+    <MovieServer>
+      <ServerGroupName>SKT</ServerGroupName>
+        <ServerList>
+          <!-- SKT1 -->
+          <Server>
+            <ServerNM>SKT1</ServerNM>
+            <ServerIP>52.136</ServerIP>
+            <MoveLogList>
+              <MoveLog>
+                <Src>\\SKT1\d$\02.LOG\WebLog\W3SVC1</Src> <!--웹-->
+                <Dest>\\ybackup\ENTBackup\movie\MOVIE_2017\MOVIE_SERVER_IIS_LOG\SKT\SKT1\WEB</Dest> 
+              </MoveLog>
+              <MoveLog>
+                <Src>\\SKT1\d$\02.LOG\WebLog\W3SVC7</Src> <!-- 모바일 -->
+                <Dest>\\ybackup\ENTBackup\movie\MOVIE_2017\MOVIE_SERVER_IIS_LOG\SKT\SKT1\MOBILE</Dest>
+              </MoveLog>
+            </MoveLogList>
+          </Server>
+          <!-- SKT2 -->
+          <Server>
+            <ServerNM>SKT2</ServerNM>
+            <ServerIP>52.137</ServerIP>
+            <MoveLogList>
+              <MoveLog>
+                <Src>\\SKT2\d$\02.LOG\WebLog\W3SVC3</Src><!--웹-->
+                <Dest>\\ybackup\ENTBackup\movie\MOVIE_2017\MOVIE_SERVER_IIS_LOG\SKT\SKT2\WEB</Dest>
+              </MoveLog>
+              <MoveLog>
+                 <Src>\\SKT2\d$\02.LOG\WebLog\W3SVC5</Src> <!-- 모바일 -->
+                <Dest>\\ybackup\ENTBackup\movie\MOVIE_2017\MOVIE_SERVER_IIS_LOG\SKT\SKT2\MOBILE</Dest>
+              </MoveLog>
+            </MoveLogList>
+          </Server>
+          <!-- SKT3 -->
+          <Server>
+            <ServerNM>SKT3</ServerNM>
+            <ServerIP>52.138</ServerIP>
+            <MoveLogList>
+              <MoveLog>
+                <Src>\\SKT3\d$\02.LOG\WebLog\W3SVC3</Src> <!-- 웹 -->
+                <Dest>\\ybackup\ENTBackup\movie\MOVIE_2017\MOVIE_SERVER_IIS_LOG\SKT\SKT3\WEB</Dest>
+              </MoveLog>
+              <MoveLog>
+               <Src>\\SKT3\d$\02.LOG\WebLog\W3SVC5</Src> <!-- 모바일 -->
+                <Dest>\\ybackup\ENTBackup\movie\MOVIE_2017\MOVIE_SERVER_IIS_LOG\SKT\SKT3\MOBILE</Dest>
+              </MoveLog>
+            </MoveLogList>
+          </Server>
+          <!-- SKT4 -->
+          <Server>
+            <ServerNM>SKT4</ServerNM>
+            <ServerIP>52.139</ServerIP>
+            <MoveLogList>
+              <MoveLog>
+               <Src>\\SKT4\d$\02.LOG\WebLog\W3SVC3</Src> <!-- 웹 -->
+                <Dest>\\ybackup\ENTBackup\movie\MOVIE_2017\MOVIE_SERVER_IIS_LOG\SKT\SKT4\WEB</Dest>
+              </MoveLog>
+              <MoveLog>
+                <Src>\\SKT4\d$\02.LOG\WebLog\W3SVC5</Src> <!-- 모바일 -->
+                <Dest>\\ybackup\ENTBackup\movie\MOVIE_2017\MOVIE_SERVER_IIS_LOG\SKT\SKT4\MOBILE</Dest>
+              </MoveLog>
+            </MoveLogList>
+          </Server>
+        </ServerList>
+ 
+      
+    </MovieServer>
+    
+  </MovieServerList>
+  
+  
+  
+  
+</SettingModel>
